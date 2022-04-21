@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="./main.css">
+  <title>Bug fixxer</title>
+</head>
+<body class="page">
+  <div class="overlay">
+    <div class="container">
+      <h1 class="title">Bug fixxer</h1>
+      <ul class="buglist">
+  
+      </ul>
+    </div>
+  </div>
+  
+  <template id="bug">
+    <li class="bug">
+      <label class="bug__label">
+        <input class="bug__input" type="checkbox" name="bugs">
+        <div class="switcher">
+          <div class="switcher__container">
+            <div class="switcher__button"></div>
+          </div>
+        </div>
+        Bug
+      </label>
+    </li>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>

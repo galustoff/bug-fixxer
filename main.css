@@ -1,0 +1,77 @@
+.overlay {
+  background-color: rgba(0, 0, 0, .1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(189,208,228, .8);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: sans-serif;
+  width: 400px;
+  padding: 36px;
+}
+
+.title {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.buglist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.bug {
+  margin: 0;
+  padding: 0;
+}
+
+.bug__label {
+}
+
+.bug__input {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.switcher {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.switcher__container {
+  box-sizing: border-box;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(131, 131, 175, .6);
+  border-radius: 10px;
+  display: flex;
+  transition: padding-left .2s, background-color .2s;
+  align-items: center;
+  padding: 0 2px;
+}
+
+.switcher__container_active {
+  padding-left: 21px;
+  background-color: rgba(43, 146, 254, .8);
+}
+
+.switcher__button {
+  background-color: #fff;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+}
